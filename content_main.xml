@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="dolphindevs.com.myfirstapp.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="237dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:hint="@string/edit_message"
+        android:inputType="textPersonName"
+        android:text="@string/edit_message"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="106dp"
+        android:hint="@string/button_send"
+        android:onClick="sendMessage"
+        android:text="@string/button_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/button_send" />
+</android.support.constraint.ConstraintLayout>
